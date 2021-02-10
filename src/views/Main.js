@@ -40,7 +40,121 @@ const Main = () => {
                 </li>
             </ul>
         </div>
-        <div className="app-main"></div>
+        <div className="app-container">
+            <div className='ruler'>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                    <div className='mm'></div>
+                </div>
+                <div className='cm'></div>
+            </div>
+        </div>
     </div>
 }
 export default Main;
