@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.45" height="34.139" viewBox="0 0 34.45 34.139">
+  <g id="fourth" transform="translate(0.5 0.5)">
+    <path id="Union_3" data-name="Union 3" d="M16.734,16.7A9.5,9.5,0,1,1,19.5,10a9.47,9.47,0,0,1-2.766,6.7L23.5,22.5Z" transform="translate(-0.5 -0.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Polygon_4" data-name="Polygon 4" transform="translate(33.95 25.153) rotate(135)" fill="#707070">
+      <path d="M 10.79290008544922 5.5 L 1.207100033760071 5.5 L 6 0.707099974155426 L 10.79290008544922 5.5 Z" stroke="none"/>
+      <path d="M 6 1.414219856262207 L 2.414219856262207 5 L 9.585780143737793 5 L 6 1.414219856262207 M 6 0 L 12 6 L 0 6 L 6 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
