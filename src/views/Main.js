@@ -1,5 +1,11 @@
 import React from "react";
 const Main = () => {
-    return <h1>Main</h1>
+    return <div className="app-wrapper">
+        <div className="app-header"></div>
+        <div className="app-sidebar">
+
+        </div>
+        <div className="app-main"></div>
+    </div>
 }
 export default Main;
