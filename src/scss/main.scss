@@ -1,0 +1,75 @@
+:root {
+    --brand: #61dafb;
+}  
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar a.active{
+      border-bottom: 3px solid var(--brand);
+      color: var(--brand);
+  }
+  .navbar a:first-child{
+    color: var(--brand);  
+  }
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    color: var(--brand);
+  }
+  .searchbox{
+      padding-top: 20px;
+      input{
+          border: 0;
+          border-radius: 15px;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+          height: 20px;
+      }
+      button{
+          height: 22px;
+          border: 1px solid #fff;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          background-color: #fff;
+          &:focus-within, &:focus{
+              outline: none;
+              border: 0;
+          }
+      }
+  }
+  .app-wrapper{
+      position: relative;
+  }
+  .app-sidebar{
+    position: fixed;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    top: 60px;
+    background-color: #f7f7f7f7;
+  }
+  .app-container{
+    padding-top: 60px;
+  }
