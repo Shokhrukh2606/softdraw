@@ -1,0 +1,15 @@
+<svg id="fifth" xmlns="http://www.w3.org/2000/svg" width="40.267" height="40.139" viewBox="0 0 40.267 40.139">
+  <g id="Rectangle_3" data-name="Rectangle 3" fill="none" stroke="#707070" stroke-width="1">
+    <rect width="36" height="36" stroke="none"/>
+    <rect x="0.5" y="0.5" width="35" height="35" fill="none"/>
+  </g>
+  <g id="Polygon_5" data-name="Polygon 5" transform="translate(40.267 31.654) rotate(135)" fill="#707070">
+    <path d="M 10.79290008544922 5.5 L 1.207100033760071 5.5 L 6 0.707099974155426 L 10.79290008544922 5.5 Z" stroke="none"/>
+    <path d="M 6 1.414219856262207 L 2.414219856262207 5 L 9.585780143737793 5 L 6 1.414219856262207 M 6 0 L 12 6 L 0 6 L 6 0 Z" stroke="none" fill="#707070"/>
+  </g>
+  <circle id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="3" r="3" transform="translate(5.5 6)" fill="#fff" stroke="#707070" stroke-width="1"/>
+  <path id="Path_5" data-name="Path 5" d="M0,0V15" transform="translate(8.5 12)" fill="#fff" stroke="#707070" stroke-width="1" stroke-dasharray="1"/>
+  <path id="Path_6" data-name="Path 6" d="M0,0H15" transform="translate(8.5 26.5)" fill="#fff" stroke="#707070" stroke-width="1" stroke-dasharray="1"/>
+  <circle id="Ellipse_3" data-name="Ellipse 3" cx="3" cy="3" r="3" transform="translate(23.5 24)" fill="#fff" stroke="#707070" stroke-width="1"/>
+  <path id="Path_4" data-name="Path 4" d="M994.543,435.921a39.279,39.279,0,0,0,6.768,9.913c2.11,2.172,4.953,4.127,8.142,4.359" transform="translate(-986 -424)" fill="none" stroke="#707070" stroke-width="1"/>
+</svg>

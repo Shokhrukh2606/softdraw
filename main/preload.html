@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		.centered{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100vh;
+			width: 100vw;
+			overflow: hidden;
+		}
+		h2{
+			font-family: sans-serif;
+			background-color:  #2978A0 ;
+			color: white;
+			padding:10px;
+			margin-top:-5px;
+			border-radius: 5px;
+		}
+		body{
+			margin:0;
+			padding: 0;
+			
+		}
+		.loader{
+			height: 350px;
+			width:100%;
+			margin-top:-350px;
+			
+			border-bottom-width: 10px;
+			border:10px solid #86BBD8;
+			border-top-width: 0px;
+			border-left-width: 0;
+			border-right-width: 0;
+			background-color: transparent;
+			align-self: flex-start;
+			animation: load 3s linear;
+			animation-iteration-count: 1;
+			border-bottom-left-radius:  100%;
+			border-bottom-right-radius:  100%;
+		}
+		@keyframes load{
+			0%{
+			 	border-bottom-left-radius:  0%;
+				border-bottom-right-radius:  0%;
+			}
+			10%{
+			 	border-bottom-left-radius:  10%;
+				border-bottom-right-radius:  10%;
+			}
+			50%{
+			 	border-bottom-left-radius:  20%;
+				border-bottom-right-radius:  20%;
+			}
+			70%{
+			 	border-bottom-left-radius:  30%;
+				border-bottom-right-radius:  30%;
+			}
+			100%{
+				border-bottom-left-radius:  100%;
+				border-bottom-right-radius:  100%;
+			}
+		}
+		#status{
+			font-size:13px;
+		}
+	</style>
+</head>
+<body>
+	<div class="centered">
+		<img src="../src/assets/icon.png" alt="">
+		<h2>TeachMe <span id="status"></span></h2>
+		<div class="loader"></div>
+	</div>
+	<script>
+		var counter=0;
+		var counting;
+		function updateCounter(){
+			if(counter===100){
+				window.clearInterval(counting);
+			}
+		  document.getElementById("status").innerHTML=counter+"%";
+		  counter++;
+		}
+		counting=window.setInterval(updateCounter, 30);
+
+	</script>
+</body>
+</html>
