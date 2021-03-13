@@ -57,6 +57,7 @@
 .notification{
 	position: fixed;
 	top: 30px;
+	z-index: 1000;
 	right:20px;
 	background-color: deepskyblue;
 	color:white;
