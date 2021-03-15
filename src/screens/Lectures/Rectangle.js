@@ -180,21 +180,21 @@ const Rectangle = (props) => {
             {notify===0
             	&&
             <div className="notification">
-            	Today we learn how to draw a rectangle.
+            	Hozir biz to'g'rito'rtburchak shaklini chizishni o'rganamiz
             	<button onClick={()=>animateRectanle(0)}>OK</button>
             </div>
             }
             {notify===1
             	&&
             <div className="notification">
-            	click on to rectangle icon in the left bar
+            	Chap tomondagi instrumentlar panelidan to'g'rito'rtburchak shaklini bosing
             	<button onClick={()=>animateRectanle(1)}>OK</button>
             </div>
             }
             {notify===2
             	&&
             <div className="notification">
-            	Draw your rectangle in the place you want.
+            	Kursorni bo'sh joyga bosgan holda chizing
             	<button onClick={()=>props.next()}>NEXT</button>
             </div>
           	}

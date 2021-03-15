@@ -3,7 +3,7 @@ import rgb_circle from "../../assets/videos/RGB_CIRCLE.mp4";
 const RgbCircle = (props) => {
     return <div style={{position:'relative'}}>
         <div className="notification">
-            	<button onClick={()=>props.next()}>NEXT</button>
+            	<button onClick={()=>props.next()}>Davom etish</button>
             </div>
         <video style={{width:'100%',
         //  marginLeft:'auto', marginRight:'auto',
