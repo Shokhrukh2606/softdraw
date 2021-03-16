@@ -180,22 +180,22 @@ const Rectangle = (props) => {
             {notify===0
             	&&
             <div className="notification">
-            	Bugun to'rtburchak chizishni o'rganamiz
-            	<button onClick={()=>animateRectanle(0)}>Tushunarli</button>
+            	Hozir biz to'g'ri to'rtburchak shaklini chizishni o'rganamiz
+            	<button onClick={()=>animateRectanle(0)}>OK</button>
             </div>
             }
             {notify===1
             	&&
             <div className="notification">
-            	Chap paneldagi to'rtburchak belgisiga bosing
-            	<button onClick={()=>animateRectanle(1)}>Tushunarli</button>
+            	Chap tomondagi instrumentlar panelidan to'g'rito'rtburchak shaklini bosing
+            	<button onClick={()=>animateRectanle(1)}>OK</button>
             </div>
             }
             {notify===2
             	&&
             <div className="notification">
-            	Maydonning istalgan qismida to'rtburchakni chizing
-            	<button onClick={()=>props.next()}>Keyingisi</button>
+            	Kursorni bo'sh joyga bosgan holda chizing
+            	<button onClick={()=>props.next()}>NEXT</button>
             </div>
           	}
         </div>

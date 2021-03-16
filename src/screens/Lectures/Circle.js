@@ -180,22 +180,23 @@ const Circle = (props) => {
             {notify===0
             	&&
             <div className="notification">
-            	Bugun aylana chizishni o'rganamiz
-            	<button onClick={()=>animateCircle(0)}>Tushunarli</button>
+
+            	Hozir biz oval shaklini chizishni o'rganamiz
+            	<button onClick={()=>animateCircle(0)}>OK</button>
             </div>
             }
             {notify===1
             	&&
             <div className="notification">
-            	Chap paneldagi aylana belgisiga bosin
-            	<button onClick={()=>animateCircle(1)}>Tushunarli</button>
+            	 Chap tomondagi instrumentlar panelidan doira shaklini bosing
+            	<button onClick={()=>animateCircle(1)}>OK</button>
             </div>
             }
             {notify===2
             	&&
             <div className="notification">
-            	Doirani asosiy qismda chizing
-            	<button onClick={()=>props.next()}>Keyingisi</button>
+            	Kursorni bo'sh joyga bosgan holda chizing
+            	<button onClick={()=>props.next()}>NEXT</button>
             </div>
           	}
         </div>
