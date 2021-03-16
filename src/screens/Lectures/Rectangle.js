@@ -31,7 +31,7 @@ const Rectangle = (props) => {
 	  }
     return <div className="app-wrapper">
         <div className="app-header">
-            <h3>Soft Draw</h3>
+            <h3>Darslar</h3>
         </div>
         <div className="app-sidebar">
             <ul className="instruments">
@@ -180,22 +180,22 @@ const Rectangle = (props) => {
             {notify===0
             	&&
             <div className="notification">
-            	Today we learn how to draw a rectangle.
-            	<button onClick={()=>animateRectanle(0)}>OK</button>
+            	Bugun to'rtburchak chizishni o'rganamiz
+            	<button onClick={()=>animateRectanle(0)}>Tushunarli</button>
             </div>
             }
             {notify===1
             	&&
             <div className="notification">
-            	click on to rectangle icon in the left bar
-            	<button onClick={()=>animateRectanle(1)}>OK</button>
+            	Chap paneldagi to'rtburchak belgisiga bosing
+            	<button onClick={()=>animateRectanle(1)}>Tushunarli</button>
             </div>
             }
             {notify===2
             	&&
             <div className="notification">
-            	Draw your rectangle in the place you want.
-            	<button onClick={()=>props.next()}>NEXT</button>
+            	Maydonning istalgan qismida to'rtburchakni chizing
+            	<button onClick={()=>props.next()}>Keyingisi</button>
             </div>
           	}
         </div>

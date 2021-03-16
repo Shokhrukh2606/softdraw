@@ -1,55 +1,51 @@
 const dataset=[
 	{
-		heading:"Tasvirlarni tuzish usullari. Rang modellari (RGB, CMYK)",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Kompyuter grafikasi rivojlanish tarixi.",
+		text:""
 	},
 	{
-		heading:"CorelDRAW dasturining interfeys qismi. Uskunalar paneli",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Kompyuter grafikasining asosiy tushunchalari. Rastrli, vektorli va fraktal grafika.",
+		text:""
 	},
 	{
-		heading:"CorelDRAW dasturida obektlar bilan ishlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Adobe Photoshop dasturida tasvirlar hosil qilish va ularni taxrirlash.",
+		text:""
 	},
 	{
-		heading:"AutoCAD dasturining interfeys qismi. Uskunalar paneli",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Adobe Photoshop dasturida filtlar bilan ishlash imkoniyatlari.",
+		text:""
 	},
 	{
-		heading:"AutoCAD dasturida kordinatalar tizimi bilan ishlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Corel Draw dasturi xususiyatlari, nashriyot va Internetda ishlatilishi.",
+		text:""
 	},
 	{
-		heading:"AutoCAD dasturida obektlar bilan ishlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Corel Draw dasturida shablonlardan foydalanish va matnlar hosil qilish va uni tahrirlash.",
+		text:""
 	},
 	{
-		heading:"AutoCAD dasturida rang tasvirlar bilan ishlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Corel Draw dasturida obyektlar va figuralar hosil qilish, ularni xususiyatlarini o’zgartirish.",
+		text:""
 	},
 	{
-		heading:"3D Studio Max dasturida obektlar bilan ishlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Auto CAD grafik tizimi uning asosiy  tushunchalari, foydalanuvchi interfeysi haqida.",
+		text:""
 	},
 	{
-		heading:"3D Studio Max dasturida obektlardagi oddiy amallar",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Auto CAD dasturida bino loyihasini yaratish.",
+		text:""
 	},
 	{
-		heading:"XYZ teksligiga obektlarni ko’chirish",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"LIRA dasturida qurilish konstruksiyalarini loyihalashni avtomat-lashtirish.",
+		text:""
 	},
 	{
-		heading:"3D Studio Max dasturida standart primitivlar hamda modifikatorlar yordamida modellashtirish",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"3D MAX dasturi elementlari va uning imkoniyatlari.",
+		text:""
 	},
 	{
-		heading:"Animatsiya asoslari. Renderlash",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
-	},
-	{
-		heading:"LIRA dasturida qurilish konstruksiyalarini loyihalash va avtomatlashtirish",
-		text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempore ut magni. Voluptatum maiores quisquam quae, totam error inventore at magnam, ex placeat voluptatibus repellendus quam tempore libero. Quibusdam, fuga."
+		heading:"Revit dasturi imkoniyatlari.",
+		text:""
 	}
 ];
 export default dataset;
