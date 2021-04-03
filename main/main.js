@@ -36,7 +36,7 @@ async function createMain() {
 }
 
 
-app.whenReady().then(createWelcome)
+app.whenReady().then(createMain)
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {

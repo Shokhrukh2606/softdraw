@@ -1,26 +1,16 @@
 import React, {useState} from "react";
-import Rectangle from './Lectures/Rectangle';
-import Circle from './Lectures/Circle';
-import Square from './Lectures/Square';
-import ConcreteCircle from './Lectures/ConcreteCircle';
-import Rgb from './Videos/Rgb';
-import RgbCircle from './Videos/RgbCircle';
+import '../assets/animations.css';
+import Any from "./Lectures/Any"
+import dataset from '../coreldata';
+
 const Coral = () => {
-	const [step, setStep]=useState(0);	  
+	const [step, setStep]=useState(0);
+  	var videos = dataset.map(video=><Any key={video.title} video = {video.video} setStep={setStep} step = {step} title={video.title}/>)
+   	videos[dataset.length] = <h1>Tugadi, <button onClick={e=>setStep(0)}>Boshidan</button></h1>
     return (
     		<div>
-    		{step===0&&<Rectangle next={()=>setStep(1)}/>}
-    		{step===1&&<Circle next={()=>setStep(2)}/>}
-    		{step===2&&<Square next={()=>setStep(3)}/>}
-    		{step===3&&<ConcreteCircle next={()=>setStep(4)}/>}
-    		{step===4&&<Rgb next={()=>setStep(5)}/>}
-    		{step===5&&<RgbCircle next={()=>setStep(6)}/>}
-			{step===6&&<div>
-    		  <h1>Darsimiz tugadi</h1>
-    			<button onClick={()=>setStep(0)}>Boshidan boshlash</button>
+    		  {videos[step]}
     		</div>
-    		}
-    		</div>
-    	)
+    )
 }
 export default Coral; 
