@@ -1,26 +1,26 @@
 const dataset=[
 	{
-		heading:"Kompyuter grafikasi rivojlanish tarixi.",
+		heading:"Fanning mazmuni va maqsadi.",
+		text:"Fanni o‘qitishdan maqsad – talabalarda zamonaviy axborot-kommunikatsiya texnologiyalarini arxitektura-qurilish sohasida qo‘llash tamoyillari haqida bilimlarning nazariy asoslarini, asosiy tushunchalari va kategoriyalarini o‘rgatish va arxitektura-qurilish  sohasini axborotlashtirish jarayonlari bilan tanishtirish hamda ularni amaliyotda tatbiq etish ko‘nikmasini hosil qilishdan iborat. Fanning vazifasi - arxitektura va qurilish sohasidagi axborot tizimlari va texnologiyalarini qo‘llash sohalarini o‘rganish va nazariy bilimlar, amaliy ko‘nikmalar, va tegishli jarayonlarga uslubiy yondoshuv hamda ilmiy dunyoqarashini shakllantirish, qonunlar  va kategoriyalar mazmun-mohiyatini bilish, ularga nisbatan shaxsiy munosabatni shakllantirish orqali insonning hayotdagi o‘rni va ahamiyatini ochib berish."
+	},
+	{
+		heading:"“Axborot texnologiyalari” fanidan mashg’ulotlarning semestrlarda soatlar bo’yicha taqsimlanishi. ",
 		text:""
 	},
 	{
-		heading:"Kompyuter grafikasining asosiy tushunchalari. Rastrli, vektorli va fraktal grafika.",
+		heading:"«Axborot texnologiyalari» fanidan mashg’ulotlarning mavzular va soatlar bo’yicha taqsimoti.",
 		text:""
 	},
 	{
-		heading:"Adobe Photoshop dasturida tasvirlar hosil qilish va ularni taxrirlash.",
+		heading:"«Axborot texnologiyalari» fanidan mashg’ulotlarning amaliy va soatlar bo’yicha taqsimoti.",
 		text:""
 	},
 	{
-		heading:"Adobe Photoshop dasturida filtlar bilan ishlash imkoniyatlari.",
+		heading:"«Axborot texnologiyalari» fanidan mashg’ulotlarning Mustaqil ish va soatlar bo’yicha taqsimoti",
 		text:""
 	},
 	{
-		heading:"Corel Draw dasturi xususiyatlari, nashriyot va Internetda ishlatilishi.",
-		text:""
-	},
-	{
-		heading:"Corel Draw dasturida shablonlardan foydalanish va matnlar hosil qilish va uni tahrirlash.",
+		heading:"Ma’ruza mashg’ulotining kalendar tematik rejasi.",
 		text:""
 	},
 	{
