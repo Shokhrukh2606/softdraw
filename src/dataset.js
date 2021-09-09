@@ -5,7 +5,7 @@ const dataset=[
 	},
 	{
 		heading:"“Axborot texnologiyalari” fanidan mashg’ulotlarning semestrlarda soatlar bo’yicha taqsimlanishi. ",
-		text:""
+		text:"asaz"
 	},
 	{
 		heading:"«Axborot texnologiyalari» fanidan mashg’ulotlarning mavzular va soatlar bo’yicha taqsimoti.",
