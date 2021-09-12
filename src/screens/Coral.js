@@ -28,7 +28,10 @@ const Coral = ({ setScreen }) => {
 							<ul className="menu__list w-100">
 								<li className="w-100">
 									<button onClick={() => setScreen(1)}>
-										<div>Video Darslik</div>
+										<div>Teoriyalar</div>
+									</button>
+									<button onClick={() => setScreen(4)}>
+										<div>Video darslar</div>
 									</button>
 									<button onClick={() => setScreen(2)}>
 										<div>Animatsiyalashtirilgan darslar</div>

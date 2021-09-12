@@ -366,6 +366,11 @@ body {
       li {
         display: flex;
         flex-direction: column;
+        button{
+          border: 0;
+          background-color: #fff;
+          border-bottom: 1px solid silver;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './scss/main.scss';
-import { Welcome, Theory, Coral, Test } from './screens';
+import { Welcome, Theory, Coral, Test, Video } from './screens';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
@@ -11,6 +11,9 @@ const App = () => {
 			break;
 		case 1:
 			return <Theory setScreen={setScreen} />
+			break;
+		case 4:
+			return <Video setScreen={setScreen} />
 			break;
 		case 2:
 			return <Coral setScreen={setScreen} />
