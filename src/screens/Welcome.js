@@ -11,7 +11,7 @@ const Welcome = (props) => {
     			<button className="btn btn-info mb-3" onClick={()=>props.setScreen(1)}>
     				Nazariy darslar
     			</button>
-				<button className="btn btn-info mb-3" onClick={()=>props.setScreen(1)}>
+				<button className="btn btn-info mb-3" onClick={()=>props.setScreen(4)}>
     				Video darslar
     			</button>
     			<button className="btn btn-info mb-3" onClick={()=>props.setScreen(2)}>
