@@ -15,6 +15,9 @@ const Welcome = (props) => {
     			<button className="btn btn-success" onClick={()=>props.setScreen(2)}>
     				Animatsiyalashtirilgan darslar
     			</button>
+				<button className="btn btn-success" onClick={()=>props.setScreen(3)}>
+    				Test savollari
+    			</button>
     		</div>
     		<div className="col-md-3">
     			

@@ -14,6 +14,7 @@ const Theory = props => {
           <span />
         </div>
         <Menu topic={topic} maketopic={changeTopic} active={menuActive} setActive={setMenuActive} />
+        <button className="ml-3 btn bg-light" onClick={()=>props.setScreen(0)}>Bosh menyu</button>
       </nav>
 
       <div className="text">
