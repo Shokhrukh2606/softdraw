@@ -13,14 +13,13 @@ const Theory = props => {
         <div className="burger-btn" onClick={() => setMenuActive(!menuActive)}>
           <span />
         </div>
-        <Menu active={menuActive} setActive={setMenuActive} />
+        <Menu topic={topic} maketopic={changeTopic} active={menuActive} setActive={setMenuActive} />
       </nav>
-      
+
       <div className="text">
-       <Tables />
-{/* 
+        {/* <Tables /> */}
         <h1>{dataset[topic].heading}</h1>
-        <p>{dataset[topic].text}</p> */}
+        <p dangerouslySetInnerHTML={{__html: dataset[topic].text}}></p>
       </div>
     </div>
 

@@ -2,8 +2,12 @@ import React from "react";
 import dataset from "../dataset";
 import { useState } from "react";
 
-const Menu = ({ header, items, active, setActive }) => {
-  const [topic, changeTopic] = useState(0);
+const Menu = ({ header, items, active, setActive, maketopic, topic }) => {
+  const changeTopic=(e, index)=>{
+    e.preventDefault()
+    maketopic(index)
+    setActive(false)
+  }
   return (
     <div>
       <div
@@ -18,8 +22,8 @@ const Menu = ({ header, items, active, setActive }) => {
           </div>
           <ul className="menu__list">
             {dataset.map((item, index) => (
-              <li className={topic === index ? "active" : ""}>
-                <button onClick={() => changeTopic(index)}>
+              <li key={`menu-${index}`} className={topic === index ? "active" : ""}>
+                <button onClick={(e) => changeTopic(e, index)}>
                   {index + 1}. {item.heading}
                 </button>
               </li>

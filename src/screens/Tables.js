@@ -12,168 +12,170 @@ export class Tables extends Component {
                 soatlar bo’yicha taqsimoti
               </h2>
               <table>
-                <tr>
-                  <th>№</th>
-                  <th>Amaliy mashg’ulot darslari mavzulari</th>
-                  <th>Soat</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>I semestr</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Qurilish sohasiga doir axborotlarning xossalari.</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Tashkiliy texnika vositalari bilan ishlash.</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                    Qurilishda murakkab hujjatlarni shakllantirish
-                    texnologiyalari.
-                  </td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    Qurilish korxonasi ma’lumotlarini elektron jadvalda
-                    shakllantirish.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>
-                    Qurilish korxonasi taqdimotlarini yaratish texnologiyalari.
-                  </td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    Ma’lumotlar bazasini boshqarish tizimlari bilan ishlash
-                  </td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    Qurilish korxonasi ma’lumotlar bazasini yaratish usullari va
-                    vositalari.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>
-                    Mutaxassisliklarga ixtisoslashgan tizimlar va dasturlar
-                    yordamida soha masalalarini yechish.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Qurilishda kompyuter tarmog’ini loyihalash</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Sohaga taaluqli firmaning web-saytini yaratish</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Internet axborot-qidiruv tizimlari.</td>
-                  <td>2</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>№</th>
+                    <th>Amaliy mashg’ulot darslari mavzulari</th>
+                    <th>Soat</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>I semestr</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>Qurilish sohasiga doir axborotlarning xossalari.</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Tashkiliy texnika vositalari bilan ishlash.</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      Qurilishda murakkab hujjatlarni shakllantirish
+                      texnologiyalari.
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      Qurilish korxonasi ma’lumotlarini elektron jadvalda
+                      shakllantirish.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      Qurilish korxonasi taqdimotlarini yaratish texnologiyalari.
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      Ma’lumotlar bazasini boshqarish tizimlari bilan ishlash
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      Qurilish korxonasi ma’lumotlar bazasini yaratish usullari va
+                      vositalari.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>
+                      Mutaxassisliklarga ixtisoslashgan tizimlar va dasturlar
+                      yordamida soha masalalarini yechish.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Qurilishda kompyuter tarmog’ini loyihalash</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Sohaga taaluqli firmaning web-saytini yaratish</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Internet axborot-qidiruv tizimlari.</td>
+                    <td>2</td>
+                  </tr>
 
-                <tr>
-                  <th></th>
-                  <th>I semestr uchun jami:</th>
-                  <th>30</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>II semestr </th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Qurilish masalalarini obyektga yo’naltirilgan
-                    dasturlashtirish tillaridan foydalanib yechish.
-                  </td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Qurilishni boshqarish dasturiy ta’minoti.</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                    Qurilish korxonasida avtomatlashtirilgan ish joylarini
-                    tashkillashtirish.
-                  </td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    Rastrli grafika dasturi yordamida ob’ektlarni qayta ishlash.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>
-                    Vektorli grafika dasturi yordamida ob’ektlarni yaratish va
-                    ularni qayta ishlash.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    Avtomatlashtirilgan loyihalash tizimida ob’ektlarni
-                    loyihalash.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    Uch o’lchoivli kompyuterli modellashtirishdasturidan
-                    foydalanib ob’ektlarni yaratish.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>
-                    Qurilish konstruktsiyalarini avtomatlashtirish dasturidan
-                    foydalanib ob’ektlarni yaratish.
-                  </td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>II semestr uchun jami:</th>
-                  <th>30</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>Kurs bo’yicha jami:</th>
-                  <th>60</th>
-                </tr>
+                  <tr>
+                    <th></th>
+                    <th>I semestr uchun jami:</th>
+                    <th>30</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>II semestr </th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      Qurilish masalalarini obyektga yo’naltirilgan
+                      dasturlashtirish tillaridan foydalanib yechish.
+                    </td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Qurilishni boshqarish dasturiy ta’minoti.</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      Qurilish korxonasida avtomatlashtirilgan ish joylarini
+                      tashkillashtirish.
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      Rastrli grafika dasturi yordamida ob’ektlarni qayta ishlash.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      Vektorli grafika dasturi yordamida ob’ektlarni yaratish va
+                      ularni qayta ishlash.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      Avtomatlashtirilgan loyihalash tizimida ob’ektlarni
+                      loyihalash.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      Uch o’lchoivli kompyuterli modellashtirishdasturidan
+                      foydalanib ob’ektlarni yaratish.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>
+                      Qurilish konstruktsiyalarini avtomatlashtirish dasturidan
+                      foydalanib ob’ektlarni yaratish.
+                    </td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>II semestr uchun jami:</th>
+                    <th>30</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>Kurs bo’yicha jami:</th>
+                    <th>60</th>
+                  </tr>
+                </tbody>
               </table>
             </div>
 
@@ -353,6 +355,7 @@ export class Tables extends Component {
               </tr>
             </table>
             </div> */}
+
           </div>
         </div>
       </div>
