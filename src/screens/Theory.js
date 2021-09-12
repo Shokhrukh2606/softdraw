@@ -1,25 +1,33 @@
 import React, { useState } from "react";
 import dataset from "../dataset";
 import Menu from "./Menu";
-import Tables from "./Tables";
+
 
 const Theory = props => {
   const [topic, changeTopic] = useState(0);
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <div className="app">
-      <nav>
-        <div className="burger-btn" onClick={() => setMenuActive(!menuActive)}>
-          <span />
-        </div>
-        <Menu topic={topic} maketopic={changeTopic} active={menuActive} setActive={setMenuActive} />
-      </nav>
-
-      <div className="text">
-        {/* <Tables /> */}
+    <div>
+      <div className="app">
+        <nav>
+          <div
+            className="burger-btn"
+            onClick={() => setMenuActive(!menuActive)}
+          >
+            <span />
+          </div>
+          <Menu
+            topic={topic}
+            maketopic={changeTopic}
+            active={menuActive}
+            setActive={setMenuActive}
+          />
+        </nav>
+      </div>
+      <div className="text col-12">
         <h1>{dataset[topic].heading}</h1>
-        <p dangerouslySetInnerHTML={{__html: dataset[topic].text}}></p>
+        <p dangerouslySetInnerHTML={{ __html: dataset[topic].text }}></p>
       </div>
     </div>
 
