@@ -8,24 +8,17 @@ const Theory = props => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <div>
-      <div className="app">
-        <nav>
-          <div
-            className="burger-btn"
-            onClick={() => setMenuActive(!menuActive)}
-          >
-            <span />
-          </div>
-          <Menu
-            topic={topic}
-            maketopic={changeTopic}
-            active={menuActive}
-            setActive={setMenuActive}
-          />
-        </nav>
-      </div>
-      <div className="text col-12">
+    <div className="app">
+      <nav>
+        <div className="burger-btn" onClick={() => setMenuActive(!menuActive)}>
+          <span />
+        </div>
+        <Menu topic={topic} maketopic={changeTopic} active={menuActive} setActive={setMenuActive} />
+        <button className="ml-3 btn bg-light" onClick={()=>props.setScreen(0)}>Bosh menyu</button>
+      </nav>
+
+      <div className="text">
+        {/* <Tables /> */}
         <h1>{dataset[topic].heading}</h1>
         <p dangerouslySetInnerHTML={{ __html: dataset[topic].text }}></p>
       </div>
