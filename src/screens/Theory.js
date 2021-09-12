@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dataset from "../dataset";
 import Menu from "./Menu";
+import Tables from "./Tables";
 
 const Theory = props => {
   const [topic, changeTopic] = useState(0);
@@ -14,9 +15,12 @@ const Theory = props => {
         </div>
         <Menu active={menuActive} setActive={setMenuActive} />
       </nav>
+      
       <div className="text">
+       <Tables />
+{/* 
         <h1>{dataset[topic].heading}</h1>
-        <p>{dataset[topic].text}</p>
+        <p>{dataset[topic].text}</p> */}
       </div>
     </div>
 

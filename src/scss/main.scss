@@ -253,8 +253,7 @@ body {
     .text {
         padding: 50px;
         background-color: rgb(231, 231, 231);
-        height: 100vh;
-        
+        height: 100%;
         h1 {
             text-align: center;
             color: #000;
@@ -375,6 +374,37 @@ body {
 .menu.active {
   transform: translateX(0);
 }
+
+//!!! TABLES
+
+.content {
+  .table {
+    h2 {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    table {
+      
+      th {
+        background-color: rgb(16, 214, 198);
+        border: 2px solid #fff;
+        text-align: center;
+        color: #fff;
+      }
+
+      td {
+        background-color: rgb(248, 223, 156);
+        border: 2px solid #fff;
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+//!!! TABLES END
 // .theory {
 // .sidebar{
 //     padding:10px;
