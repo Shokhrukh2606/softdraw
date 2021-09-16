@@ -14,11 +14,10 @@ const Theory = props => {
           <span />
         </div>
         <Menu topic={topic} maketopic={changeTopic} active={menuActive} setActive={setMenuActive} />
-        <button className="ml-3 btn bg-light" onClick={()=>props.setScreen(0)}>Bosh menyu</button>
+        <button className="ml-3 btn bg-primary menu_btn" onClick={()=>props.setScreen(0)}>Bosh menyu</button>
       </nav>
 
       <div className="text">
-        {/* <Tables /> */}
         <h1>{dataset[topic].heading}</h1>
         <p dangerouslySetInnerHTML={{ __html: dataset[topic].text }}></p>
       </div>
