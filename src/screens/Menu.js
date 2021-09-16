@@ -2,12 +2,13 @@ import React from "react";
 import dataset from "../dataset";
 import { useState } from "react";
 
-const Menu = ({ header, items, active, setActive, maketopic, topic }) => {
+const Menu = ({ active, setActive, maketopic, topic }) => {
   const changeTopic = (e, index) => {
     e.preventDefault();
     maketopic(index);
     setActive(false);
   };
+
   return (
     <div>
       <div

@@ -258,7 +258,6 @@ body {
   display: flex;
   flex-direction: column;
 
-
   h1 {
     text-align: center;
     padding-top: 50px;
@@ -321,7 +320,6 @@ body {
     .menu_btn {
       color: #fff;
       text-transform: unset;
-      
     }
   }
 }
@@ -359,9 +357,14 @@ body {
     .menu__header {
       font-size: 2rem;
       padding: 10px;
-      color: white;
+
       width: 100%;
-      text-align: center;
+
+      h1 {
+        text-align: center;
+        padding: 10px 15px;
+        color: white;
+      }
     }
 
     ul.menu__list {
@@ -391,12 +394,12 @@ body {
           }
         }
 
-        div:active{
+        div:active {
           background-color: rgb(3, 41, 51);
           color: #fff;
         }
 
-        div:hover{
+        div:hover {
           background-color: rgb(3, 41, 51);
           color: #fff;
           transition: 0.5s;
@@ -408,6 +411,35 @@ body {
 
 .menu.active {
   transform: translateX(0);
+}
+
+/// SUBMENU START
+
+.submenu {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  transform: translateY(-50%);
+
+  .subActive {
+    transform: translateY(0);
+  }
+}
+
+///!! SUBMENU END
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(3, 41, 51);
 }
 
 // .theory {
