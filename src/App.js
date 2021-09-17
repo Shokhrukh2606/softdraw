@@ -6,10 +6,12 @@ import Home from './screens/Home'
 import MenuAll from './screens/MenuAll'
 const App = () => {
 	const [screen, setScreen] = useState(0);
-
+	const [alias, setAlias] = useState("");
+	// alias bu ozin uchun qoladigan text 
+	// masalan test 1 va content qo'yasan
 	return <>
-		<MenuAll setScreen={setScreen}/>
-		<Home screen={screen} setScreen={setScreen} />
+		<MenuAll alias={alias} setAlias={setAlias} setScreen={setScreen}/>
+		<Home alias={alias} setAlias={setAlias} screen={screen} setScreen={setScreen} />
 	</>
 
 }
