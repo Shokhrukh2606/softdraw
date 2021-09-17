@@ -1,6 +1,8 @@
 const {app, BrowserWindow, ipcMain,Notification } = require('electron');
-
+const path = require('path');
+const url = require('url');
 var welcomeWindow;
+
 async function createWelcome() {
   welcomeWindow = await new BrowserWindow({
     width: 500,
@@ -28,7 +30,14 @@ async function createMain() {
     }
   });
   welcomeWindow.close();
-  mainWindow.loadURL("http://localhost:3000");
+  const startUrl =  url.format({
+    pathname: path.join(__dirname, '../build/index.html'),
+    protocol: 'file:',
+    slashes: true,
+  });
+  // mainWindow.loadURL("http://localhost:3000");
+  mainWindow.loadURL(startUrl);
+  
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
   });
@@ -36,7 +45,7 @@ async function createMain() {
 }
 
 
-app.whenReady().then(createMain)
+app.whenReady().then(createWelcome)
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {

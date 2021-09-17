@@ -3,11 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "main": "main/main.js",
+  "build": {
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "./main/main.js"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "extends": null
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
+    "electron-webpack": "^2.8.2",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -19,7 +31,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "desktop": "nodemon --watch main --exec \"electron . --debug\""
+    "desktop": "nodemon --watch main --exec \"electron . --debug\"",
+    "dist": "electron-builder",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +54,16 @@
     ]
   },
   "devDependencies": {
-    "electron": "^11.2.3"
+    "electron": "^11.5.0",
+    "electron-builder": "^22.11.7"
+  },
+  "electronWebpack": {
+    "commonSourceDirectory": "common",
+    "main": {
+      "sourceDirectory": "main"
+    },
+    "renderer": {
+      "sourceDirectory": null
+    }
   }
 }
