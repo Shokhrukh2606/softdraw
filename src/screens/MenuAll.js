@@ -11,35 +11,27 @@ const MenuAll = (props) => {
       <li>
         <span>Ma'ruza mashg'ulotlar</span>
         <ul>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Fanning mazmuni va maqsadi.') }}>1-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('“Axborot texnologiyalari” fanidan mashg’ulotlarning semestrlarda soatlar bo’yicha taqsimlanishi.') }}>2-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('«Axborot texnologiyalari» fanidan mashg’ulotlarning mavzular va soatlar bo’yicha taqsimoti.') }}>3-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('«Axborot texnologiyalari» fanidan mashg’ulotlarning amaliy va soatlar bo’yicha taqsimoti.') }}>4-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('«Axborot texnologiyalari» fanidan mashg’ulotlarning Mustaqil ish va soatlar bo’yicha taqsimoti') }}>5-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Ma’ruza mashg’ulotining kalendar tematik rejasi.') }}>6-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Corel Draw dasturida obyektlar va figuralar hosil qilish, ularni xususiyatlarini o’zgartirish.') }}>7-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Auto CAD grafik tizimi uning asosiy  tushunchalari, foydalanuvchi interfeysi haqida.') }}>8-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Auto CAD dasturida bino loyihasini yaratish.') }}>9-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('LIRA dasturida qurilish konstruksiyalarini loyihalashni avtomat-lashtirish.') }}>10-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('3D MAX dasturi elementlari va uning imkoniyatlari.') }}>11-ma'ruza</li>
-          <li onClick={() => { props.setScreen(2); props.setAlias('Revit dasturi imkoniyatlari.') }}>11-ma'ruza</li>
-
-
+          <li onClick={() => { props.setScreen(2); props.setAlias('1-maruza') }}>1-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('2-maruza') }}>2-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('3-maruza') }}>3-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('4-maruza') }}>4-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('5-maruza') }}>5-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('6-maruza') }}>6-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('7-maruza') }}>7-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('8-maruza') }}>8-ma'ruza</li>
+          <li onClick={() => { props.setScreen(2); props.setAlias('9-maruza') }}>9-ma'ruza</li>
         </ul>
       </li>
       <li>
         <span>Amaliy mashg'ulotlar</span>
         <ul>
-          <li>1-Amaliy</li>
-          <li>2-Amaliy</li>
-          <li>3-Amaliy</li>
-          <li>4-Amaliy</li>
-          <li>5-Amaliy</li>
-          <li>6-Amaliy</li>
-          <li>7-Amaliy</li>
-          <li>8-Amaliy</li>
-          <li>9-Amaliy</li>
-          <li>10-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('1-amaliy') }}>1-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('2-amaliy') }}>2-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('3-amaliy') }}>3-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('4-amaliy') }}>4-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('5-amaliy') }}>5-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('6-amaliy') }}>6-Amaliy</li>
+          <li onClick={() => { props.setScreen(3); props.setAlias('7-amaliy') }}>7-Amaliy</li>
         </ul>
       </li>
       <li>
@@ -70,16 +62,11 @@ const MenuAll = (props) => {
       <li>
         <span>Amaliy topshiriqlar</span>
         <ul>
-          <li>1-Amaliy topshiriq</li>
-          <li>2-Amaliy topshiriq</li>
-          <li>3-Amaliy topshiriq</li>
-          <li>4-Amaliy topshiriq</li>
-          <li>5-Amaliy topshiriq</li>
-          <li>6-Amaliy topshiriq</li>
-          <li>7-Amaliy topshiriq</li>
-          <li>8-Amaliy topshiriq</li>
-          <li>9-Amaliy topshiriq</li>
-          <li>10-Amaliy topshiriq</li>
+          <li onClick={()=>{props.setScreen(6); props.setAlias('1-amaliy_topshiriq')}}>1-Amaliy topshiriq</li>
+          <li onClick={()=>{props.setScreen(6); props.setAlias('2-amaliy_topshiriq')}}>2-Amaliy topshiriq</li>
+          <li onClick={()=>{props.setScreen(6); props.setAlias('3-amaliy_topshiriq')}}>3-Amaliy topshiriq</li>
+          <li onClick={()=>{props.setScreen(6); props.setAlias('4-amaliy_topshiriq')}}>4-Amaliy topshiriq</li>
+          <li onClick={()=>{props.setScreen(6); props.setAlias('5-amaliy_topshiriq')}}>5-Amaliy topshiriq</li>
 
 
         </ul>
@@ -124,7 +111,7 @@ const MenuAll = (props) => {
 
         </ul>
       </li>
-      <li onClick={() => { props.setScreen(10); }}>
+      <li className="text-white" onClick={() => { props.setScreen(10); }}>
         Muallif haqida
       </li>
 

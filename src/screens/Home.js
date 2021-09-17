@@ -9,10 +9,16 @@ const Fanhaqida = () => {
 		<embed className="w-100" style={{ height: '100vh' }} src={korsatma} type="application/pdf" />
 	</>
 }
+const PDFviewer = ({ menu, alias }) => {
+	const data = getAlias(menu, alias)
+	return <>
+		<embed className="w-100" style={{ height: '100vh' }} src={data['text']} type="application/pdf" />
+	</>
+}
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
-		{data && <div className="container">
+		{data && <div className="container-fluid">
 			<div className="row">
 				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
 			</div>
@@ -24,7 +30,7 @@ const Maruza = ({ menu, alias }) => {
 const VideoLessons = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
-		{data && <div className="container">
+		{data && <div className="container-fluid">
 			<div className="row">
 				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
 				<video className="w-100" src={data['video']} />
@@ -56,10 +62,10 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Fanhaqida setScreen={setScreen} />
 			break;
 		case 2:
-			return <Maruza menu="maruza" setScreen={setScreen} alias={alias} />
+			return <PDFviewer menu="maruza" setScreen={setScreen} alias={alias} />
 			break;
 		case 3:
-			return <Maruza menu="amaliy" setScreen={setScreen} alias={alias} />
+			return <PDFviewer menu="amaliy" setScreen={setScreen} alias={alias} />
 			break;
 		case 4:
 			return <Maruza menu="mustaqil" setScreen={setScreen} alias={alias} />
@@ -69,7 +75,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Maruza menu="xgi" setScreen={setScreen} alias={alias} />
 			break;
 		case 6:
-			return <Maruza menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
+			return <PDFviewer menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
 			break;
 		case 7:
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
