@@ -177,47 +177,6 @@ const Test = ({ setScreen }) => {
   };
   return (
     <div className="app">
-      <nav>
-        <div
-          className="burger-btn"
-          onClick={e => {
-            e.preventDefault();
-            setMenuActive(!menuActive);
-          }}
-        >
-          <span />
-        </div>
-        <div>
-          <div
-            className={menuActive ? "menu active" : "menu"}
-            onClick={e => {
-              e.preventDefault();
-              setMenuActive(false);
-            }}
-          >
-            <div className="blur" />
-            <div />
-            <div className="menu__content" onClick={e => e.stopPropagation()}>
-              <div className="menu__header">
-                <h1>Bo'limlar</h1>
-              </div>
-              <ul className="menu__list w-100">
-                <li className="w-100">
-                  <button onClick={() => setScreen(1)}>
-                    <div>Video Darslik</div>
-                  </button>
-                  <button onClick={() => setScreen(2)}>
-                    <div>Animatsiyalashtirilgan darslar</div>
-                  </button>
-                  <button onClick={() => setScreen(3)}>
-                    <div>Test savollari</div>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
       <div
         className="container h-100 py-5"
         style={{ backgroundColor: "#f7f7f7" }}
