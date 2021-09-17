@@ -14,8 +14,7 @@
 }
 
 body {
-  overflow: hidden;
-
+  font-family: 'Times New Roman', Times, serif;
   .app-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -270,7 +269,10 @@ body {
     font-size: 20px;
     color: #000;
     font-family: sans-serif;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+>>>>>>> main
   }
 }
 
@@ -472,3 +474,42 @@ body {
 //     padding:100px;
 // }
 // }
+.animate{
+  background-color: #fff;
+}
+.mynavbar {
+  display: flex;
+  padding: 15px 20px !important;
+  background-color: #1841b3;
+  li {
+    font-size: 16px;
+    padding: 10px 5px;
+    cursor: pointer;
+    text-align: center;
+    ul {
+      display: none;
+      width: 220px;
+      li {
+        padding: 10px;
+      }
+    }
+    span {
+      color: white;
+    }
+  }
+  li:hover {
+    ul {
+      filter: drop-shadow(0 0 16px rgba(14, 52, 75, 0.2));
+      display: block;
+      position: absolute;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 999;
+      li:hover {
+        color: #1841b3;
+        cursor: pointer;
+      }
+    }
+  }
+}
