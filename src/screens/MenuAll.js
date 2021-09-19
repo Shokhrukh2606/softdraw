@@ -2,6 +2,7 @@ import React from 'react'
 const MenuAll = (props) => {
   return (
     <ul className="mynavbar">
+      <li onClick={() => props.setScreen(0)}><span>Asosiy</span></li>
       <li >
         <span>Fan haqida</span>
         <ul>
@@ -111,6 +112,7 @@ const MenuAll = (props) => {
 
         </ul>
       </li>
+      
       <li className="text-white" onClick={() => { props.setScreen(10); }}>
         Muallif haqida
       </li>

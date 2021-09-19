@@ -1,28 +1,32 @@
-import React from 'react';
-import animate from './animate.svg'
+import React, {useState, useEffect} from 'react';
+import animate1 from '../assets/gif/g1.gif';
+import animate2 from '../assets/gif/g3.gif';
 const Welcome = (props) => {
+	const [animate, setAnimate]=useState(animate1);
+	useEffect(() => {
+		var myinterval=setInterval(()=>{
+			if(animate==animate1){
+				setAnimate(animate2)
+			}else{
+				setAnimate(animate1)
+			}
+		},16000)
+		return ()=>{
+			clearInterval(myinterval);
+		}
+	}, [])
 	return (
 		<div className="container-fluid welcome">
-			<div className="row animate">
-				<div className="col-md-9">
+			<div className="row">
+				<div className="col-md-7 d-flex align-items-center p-5">
 					<h1>
-						Immitatsion modellar <br />asosida kompyuter grafikasi<br /> mavzularini o'rgatish dasturi
+						Immitatsion modellar asosida <br/>
+						kompyuter grafikasi <br />
+						mavzularini o'rgatish dasturi
 					</h1>
-					{/* <button className="btn btn-info mb-3" onClick={()=>props.setScreen(1)}>
-    				Nazariy darslar
-    			</button>
-				<button className="btn btn-info mb-3" onClick={()=>props.setScreen(4)}>
-    				Video darslar
-    			</button>
-    			<button className="btn btn-info mb-3" onClick={()=>props.setScreen(2)}>
-    				Animatsiyalashtirilgan darslar
-    			</button>
-				<button className="btn btn-info mb-3" onClick={()=>props.setScreen(3)}>
-    				Test savollari
-    			</button> */}
 				</div>
-				<div className="col-md-3 d-flex align-items-center justify-content-center">
-					<object type="image/svg+xml" data={animate} />
+				<div className="col-md-5 d-flex align-items-center">
+					<img src={animate} />
 				</div>
 			</div>
 		</div>

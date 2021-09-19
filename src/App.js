@@ -4,6 +4,8 @@ import { Welcome, Theory, Coral, Test, Video } from './screens';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Home from './screens/Home'
 import MenuAll from './screens/MenuAll'
+import PDFViewer from './screens/PDFViewer';
+
 const App = () => {
 	const [screen, setScreen] = useState(0);
 	const [alias, setAlias] = useState("");

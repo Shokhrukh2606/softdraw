@@ -2,19 +2,11 @@ import React from 'react'
 import { useState } from 'react/cjs/react.development';
 import { Coral, Test, Theory, Video, Welcome } from './index';
 import { getAlias } from './mavzular';
-import legend from './legend.jpg'
-import korsatma from "./Uslubiy ko'rsatma.pdf"
-const Fanhaqida = () => {
-	return <>
-		<embed className="w-100" style={{ height: '100vh' }} src={korsatma} type="application/pdf" />
-	</>
-}
-const PDFviewer = ({ menu, alias }) => {
-	const data = getAlias(menu, alias)
-	return <>
-		<embed className="w-100" style={{ height: '100vh' }} src={data['text']} type="application/pdf" />
-	</>
-}
+import legend from '../assets/icons/legend.jpg'
+import korsatma from "./uslubiy/uslubiy.pdf"
+import PDFWrapper from "./PDFWrapper";
+import PDFViewer from './PDFViewer';
+
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
@@ -59,13 +51,13 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Welcome setScreen={setScreen} />
 			break;
 		case 1:
-			return <Fanhaqida setScreen={setScreen} />
+			return <PDFViewer file={korsatma} />
 			break;
 		case 2:
-			return <PDFviewer menu="maruza" setScreen={setScreen} alias={alias} />
+			return <PDFWrapper menu="maruza" setScreen={setScreen} alias={alias} />
 			break;
 		case 3:
-			return <PDFviewer menu="amaliy" setScreen={setScreen} alias={alias} />
+			return <PDFWrapper menu="amaliy" setScreen={setScreen} alias={alias} />
 			break;
 		case 4:
 			return <Maruza menu="mustaqil" setScreen={setScreen} alias={alias} />
@@ -75,7 +67,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Maruza menu="xgi" setScreen={setScreen} alias={alias} />
 			break;
 		case 6:
-			return <PDFviewer menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
+			return <PDFWrapper menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
 			break;
 		case 7:
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
@@ -100,6 +92,8 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 
 			</>
 			break;
+		default:
+			return <Welcome setScreen={setScreen}/>
 
 	}
 }

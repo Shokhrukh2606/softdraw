@@ -1,6 +1,17 @@
 :root {
   --brand: #61dafb;
 }
+
+@font-face {
+  font-family: 'Play';
+  src: url(../assets/fonts/Play/Play-Regular.ttf);
+}
+*{
+  font-family: 'Play';
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -233,18 +244,46 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-image: url("../assets/bg1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+  flex-direction: column;
+  justify-content: center;
   button {
     margin-right: 15px;
   }
   h1 {
     font-size: 50px;
     margin-bottom: 15px;
+    line-height:80px;
+    font-weight: bolder;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(6,85,171,1) 75%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img{
+    max-width: 100%;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: move;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0px) ;
+    }
+    
+    50% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
   }
 }
 
@@ -479,17 +518,25 @@ li.text-white{
 }
 .mynavbar {
   display: flex;
-  padding: 15px 20px !important;
-  background-color: #1841b3;
+ background: rgb(2,0,36);
+ padding-left:30px !important;
+ padding-right:30px !important;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(6,85,171,1) 75%, rgba(0,212,255,1) 100%);
   margin-bottom: 0;
   li {
     font-size: 16px;
-    padding: 10px 5px;
+    padding: 25px 15px;
     cursor: pointer;
     text-align: center;
     ul {
-      display: none;
+      opacity: 0;
+      position: absolute;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      z-index: -1;
       width: 220px;
+      margin-top:20px;
       li {
         padding: 10px;
       }
@@ -499,18 +546,56 @@ li.text-white{
     }
   }
   li:hover {
+    
     ul {
       filter: drop-shadow(0 0 16px rgba(14, 52, 75, 0.2));
-      display: block;
-      position: absolute;
-      background-color: white;
-      padding: 10px;
-      border-radius: 10px;
-      z-index: 999;
+      opacity: 1;
+      z-index:999;
+      transition:.1s;
       li:hover {
         color: #1841b3;
         cursor: pointer;
       }
+    }
+  }
+}
+.pdf-reader{
+  display:flex;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  min-height:calc(100vh - 70px);
+  .pdf-render{
+    
+  }
+  .react-pdf__Document{
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 6px rgba(12, 17, 20, 0.829));
+  }
+  .react-pdf__Page__annotations.annotationLayer{
+    display: none;
+  }
+  .page-number{
+    background-color:white;
+    padding:20px 30px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 6px rgba(12, 17, 20, 0.829));
+    margin-top: -40px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    column-gap: 30px;
+    p{
+      margin-bottom:0 !important;
+    }
+    button{
+      border:0;
+      background-color:white;
+      
     }
   }
 }
