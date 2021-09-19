@@ -72,9 +72,9 @@ const MenuAll = (props) => {
 
         </ul>
       </li>
-      <li>
+      <li onClick={() => { props.setScreen(7); props.setAlias('1-DARS') }}>
         <span>Video darslar</span>
-        <ul>
+        {/* <ul>
           <li onClick={() => { props.setScreen(7); props.setAlias('1-DARS') }}>1-Video</li>
           <li onClick={() => { props.setScreen(7); props.setAlias('2-DARS') }}>2-Video</li>
           <li onClick={() => { props.setScreen(7); props.setAlias('3-DARS') }}>3-Video</li>
@@ -86,7 +86,7 @@ const MenuAll = (props) => {
           <li onClick={() => { props.setScreen(7); props.setAlias('9-DARS') }}>9-Video</li>
           <li onClick={() => { props.setScreen(7); props.setAlias('10-DARS') }}>10-Video</li>
 
-        </ul>
+        </ul> */}
       </li>
       <li>
         <span>KIM Modellar</span>

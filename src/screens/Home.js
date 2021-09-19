@@ -6,7 +6,6 @@ import legend from '../assets/icons/legend.jpg'
 import korsatma from "./uslubiy/uslubiy.pdf"
 import PDFWrapper from "./PDFWrapper";
 import PDFViewer from './PDFViewer';
-
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
@@ -22,13 +21,17 @@ const Maruza = ({ menu, alias }) => {
 const VideoLessons = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
-		{data && <div className="container-fluid">
+		<Coral/>
+		{/* {data && <div className="container-fluid">
 			<div className="row">
 				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
-				<video className="w-100" src={data['video']} />
+
+				<video className="w-100" controls >
+					<source src={data['video']} type="video/mp4" />
+				</video>
 			</div>
 
-		</div>}
+		</div>} */}
 	</>
 }
 const KIMModellar = () => {
@@ -93,7 +96,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			</>
 			break;
 		default:
-			return <Welcome setScreen={setScreen}/>
+			return <Welcome setScreen={setScreen} />
 
 	}
 }
