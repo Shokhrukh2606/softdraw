@@ -6,6 +6,7 @@ import legend from '../assets/icons/legend.jpg'
 import korsatma from "./uslubiy/uslubiy.pdf"
 import PDFWrapper from "./PDFWrapper";
 import PDFViewer from './PDFViewer';
+import Match from "./Match"
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
@@ -17,6 +18,7 @@ const Maruza = ({ menu, alias }) => {
 		</div>}
 	</>
 }
+
 
 const VideoLessons = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
@@ -52,35 +54,35 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 	switch (screen) {
 		case 0:
 			return <Welcome setScreen={setScreen} />
-			break;
+			
 		case 1:
 			return <PDFViewer file={korsatma} />
-			break;
+			
 		case 2:
 			return <PDFWrapper menu="maruza" setScreen={setScreen} alias={alias} />
-			break;
+			
 		case 3:
 			return <PDFWrapper menu="amaliy" setScreen={setScreen} alias={alias} />
-			break;
+			
 		case 4:
 			return <Maruza menu="mustaqil" setScreen={setScreen} alias={alias} />
-			break;
+		
 
 		case 5:
 			return <Maruza menu="xgi" setScreen={setScreen} alias={alias} />
-			break;
+			
 		case 6:
 			return <PDFWrapper menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
-			break;
+			
 		case 7:
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
-			break;
+			
 		case 8:
 			return <KIMModellar setScreen={setScreen} />
-			break;
+			
 		case 9:
 			return <Testlar setScreen={setScreen} alias={alias} setAlias={setAlias} />
-			break;
+			
 		case 10:
 			return <>
 				<div className="jumbotron text-center">
@@ -94,7 +96,9 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 				</div>
 
 			</>
-			break;
+			
+		case 11:
+			return <Match/>
 		default:
 			return <Welcome setScreen={setScreen} />
 

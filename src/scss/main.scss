@@ -618,4 +618,42 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(
 @media (min-width: 1200px) {  
     
 }
- 
+.centered-xy{
+  display:flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+} 
+.match-quiz{
+  button{
+    padding: 10px 10px;
+    background-color:white;
+    filter: drop-shadow(0 0 16px rgba(14, 52, 75, 0.2));
+    border: none;
+    width:100%;
+    margin: 15px;
+  }
+  .selected-1{
+    background-color:rgb(172, 208, 255);
+  }
+  .selected-2{
+    background-color:rgb(240, 206, 255);
+  }
+  .correct{
+    .selected-1{
+      background-color:rgb(65, 197, 98);
+    }
+    .selected-2{
+      background-color:rgb(65, 197, 98);
+    }
+  }
+  .incorrect{
+    .selected-1{
+      background-color:rgb(216, 94, 120);
+    }
+    .selected-2{
+      background-color:rgb(216, 94, 120);
+    }
+  }
+}

@@ -108,7 +108,7 @@ const MenuAll = (props) => {
         <span>Testlar</span>
         <ul>
           <li onClick={() => { props.setScreen(9); props.setAlias('normal') }}>Standart test</li>
-          <li>Nostandart test</li>
+          <li onClick={() => props.setScreen(11)}>Nostandart test</li>
 
         </ul>
       </li>
