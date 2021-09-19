@@ -91,7 +91,7 @@ const MenuAll = (props) => {
       <li>
         <span>KIM Modellar</span>
         <ul>
-          <li>1-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim1') }}>1-KIM</li>
           <li>2-KIM</li>
           <li>3-KIM</li>
           <li>4-KIM</li>

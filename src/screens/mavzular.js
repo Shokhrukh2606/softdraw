@@ -38,6 +38,10 @@ import amaliy_topshiriq2 from './amaliym/2-Amaliy topshiriqlar.pdf'
 import amaliy_topshiriq3 from './amaliym/3-Amaliy topshiriqlar.pdf'
 import amaliy_topshiriq4 from './amaliym/4-Amaliy topshiriqlar.pdf'
 import amaliy_topshiriq5 from './amaliym/5-Amaliy topshiriqlar.pdf'
+
+import kim1 from './kim/kim1.mp4'
+
+
 export function getAlias(menu, alias) {
     const hammaMalumot = {
         fan_haqida: {
@@ -228,8 +232,9 @@ export function getAlias(menu, alias) {
         kim_modellar: {
             title: "KIM modellar",
             content: {
-                "": {
-                    text: ``
+                "kim1": {
+                    text: "",
+                    video: kim1
                 }
             }
         }

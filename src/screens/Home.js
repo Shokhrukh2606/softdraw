@@ -19,23 +19,24 @@ const Maruza = ({ menu, alias }) => {
 }
 
 const VideoLessons = ({ menu, alias }) => {
+	return <>
+		<Coral />
+	</>
+}
+const KIMModellar = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
-		<Coral/>
-		{/* {data && <div className="container-fluid">
+		{data && <div className="container-fluid">
 			<div className="row">
 				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
 
-				<video className="w-100" controls >
+				<video className="w-100" controls style={{height:'calc(100vh - 100px)'}} >
 					<source src={data['video']} type="video/mp4" />
 				</video>
 			</div>
 
-		</div>} */}
+		</div>}
 	</>
-}
-const KIMModellar = () => {
-	return <></>
 }
 const Testlar = ({ alias, setScreen }) => {
 	if (alias = 'normal')
@@ -76,7 +77,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
 			break;
 		case 8:
-			return <KIMModellar setScreen={setScreen} />
+			return <KIMModellar menu="kim_modellar" setScreen={setScreen} alias={alias} />
 			break;
 		case 9:
 			return <Testlar setScreen={setScreen} alias={alias} setAlias={setAlias} />
