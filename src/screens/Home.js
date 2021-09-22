@@ -6,6 +6,17 @@ import legend from '../assets/icons/legend.jpg'
 import korsatma from "./uslubiy/uslubiy.pdf"
 import PDFWrapper from "./PDFWrapper";
 import PDFViewer from './PDFViewer';
+const PDFEmbed = ({ menu, alias }) => {
+	const data = getAlias(menu, alias)
+	return <>
+		<embed className="w-100" style={{ height: '100vh' }} src={data['text']} type="application/pdf" />
+	</>
+}
+const OnePDFEmbed = ({given}) => {
+	return <>
+		<embed className="w-100" style={{ height: '100vh' }} src={given} type="application/pdf" />
+	</>
+}
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
@@ -55,13 +66,13 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Welcome setScreen={setScreen} />
 			break;
 		case 1:
-			return <PDFViewer file={korsatma} />
+			return <OnePDFEmbed given={korsatma} />
 			break;
 		case 2:
-			return <PDFWrapper menu="maruza" setScreen={setScreen} alias={alias} />
+			return <PDFEmbed menu="maruza" setScreen={setScreen} alias={alias} />
 			break;
 		case 3:
-			return <PDFWrapper menu="amaliy" setScreen={setScreen} alias={alias} />
+			return <PDFEmbed menu="amaliy" setScreen={setScreen} alias={alias} />
 			break;
 		case 4:
 			return <Maruza menu="mustaqil" setScreen={setScreen} alias={alias} />
@@ -71,7 +82,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <Maruza menu="xgi" setScreen={setScreen} alias={alias} />
 			break;
 		case 6:
-			return <PDFWrapper menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
+			return <PDFEmbed menu="amaliy_topshiriqlar" setScreen={setScreen} alias={alias} />
 			break;
 		case 7:
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
