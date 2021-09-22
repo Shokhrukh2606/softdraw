@@ -14,7 +14,7 @@ const Welcome = (props) => {
 		return ()=>{
 			clearInterval(myinterval);
 		}
-	}, [])
+	}, [animate])
 	return (
 		<div className="container-fluid welcome">
 			<div className="row">

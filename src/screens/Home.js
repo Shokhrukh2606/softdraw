@@ -34,20 +34,22 @@ const VideoLessons = ({ menu, alias }) => {
 		<Coral />
 	</>
 }
-const KIMModellar = ({ menu, alias }) => {
+const KIMModellar = ({ menu, alias, setScreen }) => {
 	const data = getAlias(menu, alias)
-	return <>
+	if(data&&data['video']){
+		return <>
 		{data && <div className="container-fluid">
 			<div className="row">
-				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
-
-				<video className="w-100" controls style={{height:'calc(100vh - 100px)'}} >
-					<source src={data['video']} type="video/mp4" />
+				<video className="w-100" controls style={{height:'calc(100vh - 100px)'}} src={data['video']}>
 				</video>
 			</div>
-
 		</div>}
 	</>
+	}else{
+		return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
+		
+	}
+
 }
 const Testlar = ({ alias, setScreen }) => {
 	if (alias = 'normal')
