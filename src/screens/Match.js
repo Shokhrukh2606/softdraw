@@ -2,79 +2,70 @@
 import React, {useState, useEffect} from 'react'
 
 const Match=(props)=>{
-    const [options, setTry]=useState([])
-    const [result, setResult]=useState('');
-    const [mistakeCount, setMistakeCount]=useState(0)
+    const colors=['blue','green', 'red', 'gold'];
+    const [trueAnswers, setTrueAnswers]=useState([]);
+    const [mistakes, setMistakes]=useState('');
+    const [answer, setAnswers]=useState([[0], [1], [2], [3]]);
+    const [open, setOpen]=useState(-1);
+    const [update, force]=useState();
+    
+    useEffect(()=>{
+        setOptions1(props.options1);
+        setOptions2(props.options2);
+        setTrueAnswers(props.answers);
+        setAnswers([[0], [1], [2], [3]]);
+        setOpen(null)
+        
+    }, [props.answers])
     const [options1, setOptions1]=useState([
-        {
-            index: 0,
-            value:'One'
-        },
-        {
-            index: 1,
-            value:'Two'
-        }
+            'One',
+            'Two',
+            'Three',
+            'Four'
     ]);
     const [options2, setOptions2]=useState([
-        {
-            index: 0,
-            value:'Zwei'
-        },
-        {
-            index: 1,
-            value:'Eins'
-        }
+        'Zwei',
+        'Eins',
+        'Vier',
+        'Drei'
     ]);
-    useEffect(()=>{
-        if(options.length==2 && options[0]!=undefined){
-            check();
+    const checkAnswers=()=>{
+        var misCount=0;
+       
+        for(let i=0; i<answer.length; i++){
+            if(answer[i][1]!=trueAnswers[i]){
+                misCount++;
+            }
         }
-    }, [options]);
-    const setOption=async (index, value)=>{
-        if(index==1){
-            var temp=[...options]
-            temp[0]=value;
-            setTry(temp)
-        }
-        if(index==2){
-            var temp=[...options]
-            temp[1]=value;
-            setTry(temp)
-        }       
+        setMistakes("To'g'ri javoblar: "+(4-misCount)+". Noto'g'ri javoblar: "+misCount);
     }
-    const check=()=>{
-        const matches={
-            0:1,
-            1:0
+
+    const setAnswer2=(index)=>{
+        console.log(trueAnswers)
+        var temp=answer;
+        temp[open][1]=index;
+        setAnswers(temp);
+        force({});
+    }
+    const deepSearch=(index)=>{
+        for(let i=0; i<answer.length;i++){
+            if(answer[i][1]==index){
+                return answer[i];
+            }
         }
-        if(matches[options[0]]==options[1]){
-            setResult('correct');
-            var temp1=[...options1];
-            var temp2=[...options2];
-            temp1=temp1.filter((item)=>{
-                return item.index!=options[0]
-            })
-            temp2=temp2.filter((item)=>{
-                return item.index!=options[1]
-            })
-            setOptions1(temp1);
-            setOptions2(temp2);
-            setTry([])
-        }else{
-            setResult('incorrect');
-            setMistakeCount(mistakeCount+1);
-        }
+        return false;
     }
     const options1HTML=options1.map((item, index)=>{
-        return <button className={options[0]==item.index?'selected-1':''} onClick={()=>setOption('1', item.index)}>{item.value}</button>
+        return <button onClick={()=>setOpen(index)} className={index==open || answer[index].length==2?colors[index]:'' }>{item}</button>
     })
     const options2HTML=options2.map((item, index)=>{
-        return <button className={options[1]==item.index?'selected-2':''} onClick={()=>setOption('2', item.index)}>{item.value}</button>
+        return <button onClick={()=>setAnswer2(index)}className={deepSearch(index)?colors[deepSearch(index)[0]]:'' }>{item}</button>
     })
     return (
         <div className="centered-xy match-quiz">
-            <h4>Jami xatolar: {mistakeCount}</h4>
-            <div className={'row '+result}>
+            <h4>{mistakes}</h4>
+            <div className={'row '}>
+            
                 <div className="col-md-6">
                     <div>
                        {options1HTML}
@@ -85,6 +76,13 @@ const Match=(props)=>{
                        {options2HTML}
                     </div>
                 </div>
+            </div>
+            <div>
+                <button onClick={()=>checkAnswers()}>Tekshirish</button>
+            </div>
+            <div>
+                {props.index!=0 && <button onClick={()=>props.setIndex(props.index-1)}>Ortga</button>}
+                {props.questions.length-1!=props.index && <button onClick={()=>props.setIndex(props.index+1)}>Oldinga</button>}
             </div>
         </div>
     )

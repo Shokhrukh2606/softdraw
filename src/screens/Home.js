@@ -6,7 +6,7 @@ import legend from '../assets/icons/legend.jpg'
 import korsatma from "./uslubiy/uslubiy.pdf"
 import PDFWrapper from "./PDFWrapper";
 import PDFViewer from './PDFViewer';
-import Match from "./Match"
+import Match2 from "./Match2"
 const Maruza = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
@@ -21,23 +21,24 @@ const Maruza = ({ menu, alias }) => {
 
 
 const VideoLessons = ({ menu, alias }) => {
+	return <>
+		<Coral />
+	</>
+}
+const KIMModellar = ({ menu, alias }) => {
 	const data = getAlias(menu, alias)
 	return <>
-		<Coral/>
-		{/* {data && <div className="container-fluid">
+		{data && <div className="container-fluid kim-model">
 			<div className="row">
 				<div className="col-12 text-center" dangerouslySetInnerHTML={{ __html: data['text'] }} />
 
-				<video className="w-100" controls >
+				<video className="w-100" controls style={{height:'calc(100vh - 100px)'}} >
 					<source src={data['video']} type="video/mp4" />
 				</video>
 			</div>
 
-		</div>} */}
+		</div>}
 	</>
-}
-const KIMModellar = () => {
-	return <></>
 }
 const Testlar = ({ alias, setScreen }) => {
 	if (alias = 'normal')
@@ -78,11 +79,10 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			return <VideoLessons menu="video_darslar" setScreen={setScreen} alias={alias} />
 			
 		case 8:
-			return <KIMModellar setScreen={setScreen} />
-			
+			return <KIMModellar menu="kim_modellar" setScreen={setScreen} alias={alias} />
+			break;
 		case 9:
 			return <Testlar setScreen={setScreen} alias={alias} setAlias={setAlias} />
-			
 		case 10:
 			return <>
 				<div className="jumbotron text-center">
@@ -98,7 +98,7 @@ const Home = ({ screen, setScreen, alias, setAlias }) => {
 			</>
 			
 		case 11:
-			return <Match/>
+			return <Match2/>
 		default:
 			return <Welcome setScreen={setScreen} />
 
