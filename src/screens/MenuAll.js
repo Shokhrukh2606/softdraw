@@ -92,16 +92,18 @@ const MenuAll = (props) => {
         <span>KIM Modellar</span>
         <ul>
           <li onClick={() => { props.setScreen(8); props.setAlias('kim1') }}>1-KIM</li>
-          <li>2-KIM</li>
-          <li>3-KIM</li>
-          <li>4-KIM</li>
-          <li>5-KIM</li>
-          <li>6-KIM</li>
-          <li>7-KIM</li>
-          <li>8-KIM</li>
-          <li>9-KIM</li>
-          <li>10-KIM</li>
-
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim2') }}>2-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim3') }}>3-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim4') }}>4-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim5') }}>5-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim6') }}>6-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim7') }}>7-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim8') }}>8-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim9') }}>9-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim10') }}>10-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim11') }}>11-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim12') }}>12-KIM</li>
+          <li onClick={() => { props.setScreen(8); props.setAlias('kim13') }}>Video darslar</li>
         </ul>
       </li>
       <li>
