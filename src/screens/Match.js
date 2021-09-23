@@ -14,21 +14,29 @@ const Match=(props)=>{
         setOptions2(props.options2);
         setTrueAnswers(props.answers);
         setAnswers([[0], [1], [2], [3]]);
-        setOpen(null)
+        setOpen(null);
+        setMistakes("");
         
     }, [props.answers])
     const [options1, setOptions1]=useState([
-            'One',
-            'Two',
-            'Three',
-            'Four'
+            '1',
+            '2',
+            '3',
+            '4'
     ]);
     const [options2, setOptions2]=useState([
-        'Zwei',
+        'Two',
         'Eins',
         'Vier',
         'Drei'
     ]);
+    const reset=()=>{
+        setOptions1(props.options1);
+        setOptions2(props.options2);
+        setTrueAnswers(props.answers);
+        setAnswers([[0], [1], [2], [3]]);
+        setOpen(null)
+    }
     const checkAnswers=()=>{
         var misCount=0;
        
@@ -37,7 +45,9 @@ const Match=(props)=>{
                 misCount++;
             }
         }
-        setMistakes("To'g'ri javoblar: "+(4-misCount)+". Noto'g'ri javoblar: "+misCount);
+        
+        alert("To'g'ri javoblar: "+(4-misCount)+". Noto'g'ri javoblar: "+misCount);
+        props.calcMisc(misCount);
     }
 
     const setAnswer2=(index)=>{
@@ -63,7 +73,9 @@ const Match=(props)=>{
     })
     return (
         <div className="centered-xy match-quiz">
+             <h1>Nostandard testlar</h1>
             <h4>{mistakes}</h4>
+            <h5>{props.index+1} - test </h5>
             <div className={'row '}>
             
                 <div className="col-md-6">
@@ -80,9 +92,9 @@ const Match=(props)=>{
             <div>
                 <button onClick={()=>checkAnswers()}>Tekshirish</button>
             </div>
-            <div>
+            <div className="row">
                 {props.index!=0 && <button onClick={()=>props.setIndex(props.index-1)}>Ortga</button>}
-                {props.questions.length-1!=props.index && <button onClick={()=>props.setIndex(props.index+1)}>Oldinga</button>}
+                {props.questions.length!=props.index && <button onClick={()=>props.setIndex(props.index+1)}>Oldinga</button>}
             </div>
         </div>
     )

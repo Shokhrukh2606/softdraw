@@ -25,8 +25,8 @@ const Welcome = (props) => {
 						mavzularini o'rgatish dasturi
 					</h1>
 				</div>
-				<div className="col-md-5 d-flex align-items-center">
-					<img src={animate} />
+				<div className="col-md-5 d-flex align-items-center welcome2">
+					{/* <img src={animate} /> */}
 				</div>
 			</div>
 		</div>

@@ -39,18 +39,18 @@ import amaliy_topshiriq3 from './amaliym/3-Amaliy topshiriqlar.pdf'
 import amaliy_topshiriq4 from './amaliym/4-Amaliy topshiriqlar.pdf'
 import amaliy_topshiriq5 from './amaliym/5-Amaliy topshiriqlar.pdf'
 
-import kim1 from './kim/kim1.mp4'
-import kim2 from './kim/kim2.mp4'
-import kim3 from './kim/kim3.mp4'
-import kim4 from './kim/kim4.mp4'
-import kim5 from './kim/kim5.mp4'
-import kim6 from './kim/kim6.mp4'
-import kim7 from './kim/kim7.mp4'
-import kim8 from './kim/kim8.mp4'
-import kim9 from './kim/kim9.mp4'
-import kim10 from './kim/kim10.mp4'
-import kim11 from './kim/kim11.mp4'
-import kim12 from './kim/kim12.mp4'
+// import kim1 from './kim/kim1.mp4'
+// import kim2 from './kim/kim2.mp4'
+// import kim3 from './kim/kim3.mp4'
+// import kim4 from './kim/kim4.mp4'
+// import kim5 from './kim/kim5.mp4'
+// import kim6 from './kim/kim6.mp4'
+// import kim7 from './kim/kim7.mp4'
+// import kim8 from './kim/kim8.mp4'
+// import kim9 from './kim/kim9.mp4'
+// import kim10 from './kim/kim10.mp4'
+// import kim11 from './kim/kim11.mp4'
+// import kim12 from './kim/kim12.mp4'
 
 
 
@@ -244,69 +244,69 @@ export function getAlias(menu, alias) {
         kim_modellar: {
             title: "KIM modellar",
             content: {
-                "kim1": {
-                    text: "",
-                    video: kim1
-                },
+                // "kim1": {
+                //     text: "",
+                //     video: kim1
+                // },
                 
-                "kim2": {
-                    text: "",
-                    video: kim2
-                },
+                // "kim2": {
+                //     text: "",
+                //     video: kim2
+                // },
                 
-                "kim3": {
-                    text: "",
-                    video: kim3
-                },
+                // "kim3": {
+                //     text: "",
+                //     video: kim3
+                // },
                 
-                "kim4": {
-                    text: "",
-                    video: kim4
-                },
+                // "kim4": {
+                //     text: "",
+                //     video: kim4
+                // },
                 
-                "kim5": {
-                    text: "",
-                    video: kim5
-                },
+                // "kim5": {
+                //     text: "",
+                //     video: kim5
+                // },
                 
-                "kim6": {
-                    text: "",
-                    video: kim6
-                },
+                // "kim6": {
+                //     text: "",
+                //     video: kim6
+                // },
                 
-                "kim7": {
-                    text: "",
-                    video: kim7
-                },
+                // "kim7": {
+                //     text: "",
+                //     video: kim7
+                // },
                 
-                "kim8": {
-                    text: "",
-                    video: kim8
-                },
+                // "kim8": {
+                //     text: "",
+                //     video: kim8
+                // },
                 
-                "kim9": {
-                    text: "",
-                    video: kim9
-                },
+                // "kim9": {
+                //     text: "",
+                //     video: kim9
+                // },
                 
-                "kim10": {
-                    text: "",
-                    video: kim10
-                },
+                // "kim10": {
+                //     text: "",
+                //     video: kim10
+                // },
                 
-                "kim11": {
-                    text: "",
-                    video: kim11
-                },
+                // "kim11": {
+                //     text: "",
+                //     video: kim11
+                // },
                 
-                "kim12": {
-                    text: "",
-                    video: kim12
-                },
-                "kim13":{
-                    text:"",
-                    video:""
-                }
+                // "kim12": {
+                //     text: "",
+                //     video: kim12
+                // },
+                // "kim13":{
+                //     text:"",
+                //     video:""
+                // }
             }
         }
     }

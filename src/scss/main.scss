@@ -22,8 +22,14 @@ body::-webkit-scrollbar {
 
 .welcome {
   background-color: crimson;
+ 
 }
-
+.welcome{
+  background-image: url("../assets/bg/2.jpg");
+  background-position: center right;
+  background-size: 60% !important;
+  background-repeat: no-repeat;
+}
 body {
   font-family: 'Times New Roman', Times, serif;
   .app-wrapper {
@@ -642,6 +648,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(
   flex-direction: column;
 } 
 .match-quiz{
+  background-image: url(../assets/bg/1.jpg);
+  background-size: contain;
+  background-position: center right;
   button{
     padding: 10px 10px;
     background-color:white;
